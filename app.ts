@@ -71,3 +71,21 @@ function forUpd(ele : HTMLElement) {
   updBtn.style.display = "none"
 
 }
+
+
+function forEdit (ele : HTMLElement) {
+  let parentDiv = ele.parentElement!.parentElement as HTMLDivElement;
+  let boldElement = parentDiv.querySelector("b") as HTMLElement;
+  let inputElement = parentDiv.querySelector("input") as HTMLInputElement;
+  let updBtn = parentDiv.querySelector("button") as HTMLButtonElement;
+  inputElement.style.display = "block";
+  updBtn.style.display = "block";
+  boldElement.style.display = "none";
+  inputElement.value = boldElement.innerText;
+}
+
+
+function forDelete(ele : HTMLElement) {
+  let taskInp = ele.parentElement!.parentElement as HTMLDivElement;
+  taskInp.remove();
+}

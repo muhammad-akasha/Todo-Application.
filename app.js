@@ -57,3 +57,17 @@ function forUpd(ele) {
     inputElement.style.display = "none";
     updBtn.style.display = "none";
 }
+function forEdit(ele) {
+    let parentDiv = ele.parentElement.parentElement;
+    let boldElement = parentDiv.querySelector("b");
+    let inputElement = parentDiv.querySelector("input");
+    let updBtn = parentDiv.querySelector("button");
+    inputElement.style.display = "block";
+    updBtn.style.display = "block";
+    boldElement.style.display = "none";
+    inputElement.value = boldElement.innerText;
+}
+function forDelete(ele) {
+    let taskInp = ele.parentElement.parentElement;
+    taskInp.remove();
+}
