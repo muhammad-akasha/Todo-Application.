@@ -13,13 +13,12 @@
     <section class="to-do-app">
       <div class="todo-box">
         <h1>TODO Application</h1>
-        <div>
-          <form id="task-form">
-            <label for="task"></label>
-            <input type="text" name="task" id="task" />
-            <button onclick="addTask()">Add task</button>
-          </form>
-        </div>
+        <form id="task-form">
+          <label for="task"></label>
+          <input type="text" name="task" id="task"/>
+          <button type="submit">Add task</button>
+        </form>
+        <div id="tasks-container"></div> <!-- Separate container for tasks -->
       </div>
     </section>
 

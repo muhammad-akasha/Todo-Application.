@@ -93,21 +93,29 @@ body {
 }
 .for-bold {
   font-size: 19px;
-  /* margin-left: 25px; */
 }
 .upd-btn {
-  position: relative;
-  left: -38px;
   padding: 6px 8px;
   border-radius: 7px;
   background: #49e1a9;
   font-weight: 600
 }
+.inp-box {
+  display: flex;
+  gap: 5px;
+}
 .icons {
   display: flex;
   gap: 25px;
 }
-
 .icons :nth-child(2) {
   color: rgba(255, 0, 0, 0.753);
+}
+
+.hide{
+  display: none
+}
+
+.edit , .delete , button{
+  cursor: pointer;
 }

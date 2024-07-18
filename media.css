@@ -71,9 +71,6 @@
   .task-div input{
     width: 40%
   }
-  .upd-btn {
-    left: -5px
-  }
 }
 
 @media (min-width:460px) and (max-width:580px){
