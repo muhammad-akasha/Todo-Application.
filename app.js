@@ -15,17 +15,6 @@ import {
   updateDoc
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBpO6zZ6N5cLzRKc-ogi4hBgkXmk-72jlE",
-  authDomain: "todo-app-a736d.firebaseapp.com",
-  projectId: "todo-app-a736d",
-  storageBucket: "todo-app-a736d.appspot.com",
-  messagingSenderId: "19221910018",
-  appId: "1:19221910018:web:2677ed893873310ee98d1b",
-  measurementId: "G-J92P19LDC1"
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
