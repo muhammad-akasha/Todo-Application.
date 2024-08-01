@@ -1,80 +1,18 @@
-@media (max-width: 992px) {
-  .todo-box {
-    width: 82%;
+@media (max-width:576px){
+  .todo-box{
+    width: 95%;
   }
-  .todo-box :nth-of-type(1) input {
-    width: 85%;
-    font-size: 16px;
+  #task-form{
+    flex-direction: column;
+    gap: 25px
   }
+  .inp-div , .btn-div , .submit-btn{
+    width: 100%;
+    margin: 0;
+  }
+  .inp-box {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }
-@media (max-width: 786px) {
-    .todo-box {
-      width: 82%;
-    }
-    .todo-box :nth-of-type(1) input {
-      width: 78%;
-      font-size: 16px;
-    }
-  }
-  @media (min-width:670px) and (max-width: 826px) {
-    .todo-box {
-      width: 82%;
-    }
-    .todo-box :nth-of-type(1) input {
-      width: 83%;
-      font-size: 16px;
-    }
-  }
-
-  @media (min-width:670px) and (max-width: 728px) {
-    .todo-box {
-      width: 80%;
-    }
-    .todo-box :nth-of-type(1) input {
-      width: 81%;
-      font-size: 16px;
-    }
-  }
-
-
-@media (max-width: 570px) {
-  .todo-box {
-    width: 82%;
-  }
-  .todo-box :nth-of-type(1) input {
-    width: 73%;
-    font-size: 16px;
-  }
-}
-
-
-@media (min-width:330px) and (max-width:460px){
-    .todo-box {
-        width: 82%;
-        padding: 50px 20px;
-      }
-      .todo-box :nth-of-type(1) input {
-        width: 65%;
-        font-size: 16px;
-      }
-      .to-do-app h1 {
-        font-size: 34px;
-    }
-}
-
-@media (min-width:330px) and (max-width:360px){
-  .todo-box :nth-of-type(1) input {
-    width: 62%;
-  }
-}
-@media (max-width:580px){
-  .task-div input{
-    width: 40%
-  }
-}
-
-@media (min-width:460px) and (max-width:580px){
-  .task-div input{
-    width: 45%
-  }
 }

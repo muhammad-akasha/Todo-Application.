@@ -54,16 +54,27 @@ body {
   background: #fdfffc;
   border-radius: 20px
 }
-.todo-box :nth-of-type(1) input {
-  width: 80%;
+#task-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  align-items: baseline
+}
+.inp-div{
+  width: 75%;
+}
+
+#task {
   padding: 15px 7px;
   border: none;
   box-shadow: 0px 0px 8px #d5d1d1;
   outline-color: #000;
   border-radius: 8px;
-  font-size: 17px
+  font-size: 17px;
+  width: 100%
 }
-.todo-box :nth-of-type(1) button {
+.submit-btn{
   padding: 12px 7px;
   margin-left: 9px;
   background: #49e1a9;
@@ -72,11 +83,11 @@ body {
   color: #000;
   font-weight: 800;
 }
+
 .task-div {
   width: -webkit-fill-available;
   border: 2px solid #fff;
-  height: 30px;
-  padding: 13px 10px;
+  padding: 8px 10px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -93,6 +104,11 @@ body {
 }
 .for-bold {
   font-size: 19px;
+}
+input[type="text"]:focus{
+  border:none;
+  box-shadow: 0px 0px 5px #d3d3d3;
+  outline: 2px solid #000
 }
 .upd-btn {
   padding: 6px 8px;
